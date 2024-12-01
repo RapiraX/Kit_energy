@@ -1,0 +1,18 @@
+@mixin h3-title-style ($font-size: 20px, $line-height: 20px, $font-weight: 400) {
+    font-family: "Oswald", sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+@mixin white-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+@mixin foreground-icon-styles {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}

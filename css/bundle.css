@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+}
+
+p {
+  line-height: 24px;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 53px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+}
+.header .menu__item {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.header .menu__item:hover {
+  border-bottom: white solid 2px;
+}
+
+.background {
+  background-image: url("../images/sec1_index-background-desktop.webp");
+  background-repeat: no-repeat;
+  background-size: initial;
+  position: absolute;
+  background-position: top right;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main__left {
+  padding-top: 111px;
+  max-width: 415px;
+}
+.main__title {
+  margin-bottom: 40px;
+}
+.main__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 66px;
+}
+.main__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #68B738;
+  padding: 14px 26px;
+}
+.main__right-img {
+  height: 499px;
+}
+.main__right-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catalog .card {
+  margin-top: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.catalog .card__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 570px;
+          flex: 0 1 570px;
+  padding: 41px 52px;
+  background-color: #F2F2F2;
+}
+.catalog .card__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 62px;
+  margin-bottom: 39px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog .card__icon {
+  background-color: #68B738;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+.catalog .card__back-img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%; /* Сдвиг вниз на 50% высоты родителя */
+  left: 50%; /* Сдвиг вправо на 50% ширины родителя */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); /* Смещение обратно на 50% размера потомка */
+}
+.catalog .card__back-img-1 {
+  background-image: url("../images/sec-2_item-1_cat-slim.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.catalog .card__back-img-2 {
+  background-image: url("../images/sec-2_img-2_cat-pro.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.catalog .card__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+.catalog .card__text {
+  margin-bottom: 23px;
+}
+.catalog .card__button-go-to {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.catalog .card__button-go-to:after {
+  content: url("../images/sec-2-item3-arrow.svg");
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -60px;
+}
+.catalog .card__button-go-to:hover {
+  -webkit-transform: scale(115%);
+          transform: scale(115%);
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
